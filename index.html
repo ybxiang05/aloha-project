@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="poop" />
+    <link 
+      href="css/reset.css"  rel="stylesheet" />
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" 
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" 
+      crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link 
+      rel="stylesheet" 
+      href="css/fonts.css">
+      
+    <title>Imitation Aloha Apparel Co.</title>
+  </head>
+  <body>
+    <!-- logo/nav/cart -->
+    <header class="page-header container">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="images/aloha-logo.svg"
+            alt="Aloha Apparel Co."
+          />
+        </a>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation-options">
+          <li><a href="#about">About</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#updates">Updates</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="#">
+          <img
+            src="images/cart-icon.svg"
+            alt="Shopping Cart"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- main image/visuals -->
+    <section class="banner">
+      <h3>New Collection</h3>
+      <h1>Spring/Summer 2020</h1>
+    </section>
+
+    <!-- main text -->
+    <section class="about container-small" id="about">
+      <h2>
+        <span class="heading-italic"> Hand-Crafted</span>
+        <span class="heading-bold">Styles</span>
+      </h2>
+      <p>
+        Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse
+        our current selection of products or sign-up for updates below.
+      </p>
+    </section>
+
+    <!-- fashion categories -->
+    <section class="categories" id="shop">
+      <ul class="product-categories">
+        <li class="rectangle mens">
+          <span class="category-name"></span><a href="#">Men's</a></span>
+        </li>
+        <li class="square trends">
+          <span class="category-name"><a href="#">Trends</a></span>
+        </li>
+        <li class="square glasses">
+            <span class="category-name"><a href="#">Glasses</a></span>
+        </li>
+        <li class="square sale">
+            <span class="category-name"><a href="#">Sale</a></span>
+        </li>
+        <li class="square bags">
+            <span class="category-name"><a href="#">Bags</a></span>
+        </li>
+        <li class="rectangle womens">
+            <span class="category-name"><a href="#">Women's</a></span>
+        </li>
+      </ul>
+    </section>
+
+<!-- Most-Loved Products -->
+    <section class="most-loved container-small" id="featured">
+      <h2>
+        <span class="heading-italic"> Most-Loved</span
+        ><span class="heading-bold"> Products</span>
+      </h2>
+      <section>
+        <ul class="flickity">
+          <li class="individual-item">
+            <img src="./images/stretch-knit-dress.jpg"/>
+            <span class="product-type">dresses</span>
+            <span class="product-name">Stretch Knit Dress</span>
+            <span class="price">$169.00</span>
+          </li>
+          <li class="individual-item">
+            <img src="./images/cotton-blue-shirt.jpg"/>
+            <span class="product-type">shirts</span>
+            <span class="product-name">Denim Shirt</span>
+            <span class="price">$89.00</span>
+          </li>
+          <li class="individual-item">
+            <img src="./images/checked-stretch-dress.jpg"/>
+            <span class="product-type">dresses</span>
+            <span class="product-name">Checked Stretch Dress</span>
+            <span class="price">$129.00</span>
+          </li>
+          <li class="individual-item">
+            <img src="./images/blue-hipster-backpack.jpg"/>
+            <span class="product-type">bags</span>
+            <span class="product-name">Blue Hipster Backpack</span>
+            <span class="price">$69.00</span>
+          </li>
+          <li class="individual-item">
+            <img src="./images/demin-overall-shorts.jpg"/>
+            <span class="product-type">denim</span>
+            <span class="product-name">Denim Overall Shorts</span>
+            <span class="price">$89.00</span>
+          </li>
+          <li class="individual-item">
+            <img src="./images/pink-dotted-dress.jpg"/>
+            <span class="product-type">dresses</span>
+            <span class="product-name">Dotted Dress</span>
+            <span class="price">$99.00</span>
+          </li>
+          <li class="individual-item">
+            <img src="./images/blue-silk-dress.jpg"/>
+            <span class="product-type">dresses</span>
+            <span class="product-name">Blue Silk Dress</span>
+            <span class="price">$119.00</span>
+          </li>
+          <li class="individual-item">
+            <img src="./images/cotton-yellow-tshirt.jpg"/>
+            <span class="product-type">shirts</span>
+            <span class="product-name">Cotton Yellow Tshirt</span>
+            <span class="price">$39.00</span>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- updates - email collection -->
+    <section class="email" id="updates">
+      <h2>
+        <span class="heading-italic">Sign-up for</span>
+        <span class="heading-bold"> Updates</span>
+      </h2>
+      <p>
+        Stay updated on our latest product releases, be first to find out about
+        upcoming sales, and get free style tips from our blog. Unsubscribe at
+        any time.
+      </p>
+    <div class="email-subscribe">
+      <form class="email-input">
+        <input
+            type="email"
+            name="email_address"
+            value placeholder="Your Email"/>
+        <input 
+            type="submit" 
+            name="Subscribe" 
+            value="Subscribe"/>
+      </form>
+    </div>
+    </section>
+
+    <footer class="container">
+      <section class="contact-info">
+        <p>
+          &copy; 2019 Aloha Apparel Co.
+          <br />
+          Powered by HTML and CSS.
+        </p>
+        <p class="phone-email">
+          604-604-6040. <a href="mailto:info@aohaapparel.com"
+            >info@alohaapparel.com</a>
+        </p>
+        <p class="address">
+          1490 W Broadway
+          <br />
+          Vancouver, BC, Canada
+        </p>
+      </section>
+      <aside class="social-media">
+        <ul>
+          <li class="facebook">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i> <span>Facebook</span>
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="#">
+              <i class="fab fa-twitter"></i> <span>Twitter</span>
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="#">
+              <i class="fab fa-instagram"></i> <span>Instagram</span>
+            </a>
+          </li>
+          <li class="pinterest">
+            <a href="#">
+              <i class="fab fa-pinterest"></i>
+              <span>Pinterest</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </footer>
+  </body>
+</html>

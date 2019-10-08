@@ -1,0 +1,580 @@
+/* helpers and extra resets */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* typography */
+
+body {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.heading-italic {
+  font-style: italic;
+}
+
+.heading-bold {
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-family: "Playfair Display";
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.45rem;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 2;
+  font-size: 1rem;
+}
+
+footer p {
+  line-height: 1;
+}
+
+/* layout classes */
+body {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  /* border: 2px; */
+}
+.container {
+  /* max-width: 1240px; */
+  margin: 0 auto; /*to centre element */
+}
+
+.container-small {
+  max-width: 720px;
+  margin: 0 auto; /*to centre element */
+  padding: 64px 1%;
+}
+
+/* *****  REMEMBER TO AUTOPREFIXER AFTER FINISHED  ***** */
+
+/* header area */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 2.16%;
+  background-color: white;
+  position: fixed;
+  flex-wrap: nowrap;
+  width: 100%;
+  font-size: 0.875em;
+  font-weight: 500;
+  top: 0;
+  /* padding: 16px 1% 8 px 1%; */
+
+  /* stretch goal -- position: sticky?; 
+    also has to do with padding of banner*/
+}
+
+.page-header img {
+  max-width: 120px;
+  max-height: 50px;
+}
+
+.logo {
+  display: flex;
+  /* flex-grow: 1; */
+  flex-basis: 20%;
+  position: relative;
+  text-align: left;
+}
+
+.cart {
+  /* flex-grow: 1; */
+  flex-basis: 20%;
+  text-align: right;
+  margin-right: 0;
+}
+
+.navigation-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* align-self: flex-end; */
+  text-transform: uppercase;
+  color: #e2574c;
+  flex-grow: 1;
+  /* position: relative; */
+  /* why is alignment skewed right? */
+}
+
+nav li a {
+  color: #e2574c;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #b64036;
+}
+
+/* banner */
+.banner {
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 400px;
+  padding: 130px 0px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: center, center 60px, top;
+  background-size: cover, 150px 369px, cover;
+  margin-top: 83px;
+}
+
+.banner h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.banner h3,
+.banner h1 {
+  text-shadow: 3px 3px 6px #969696;
+}
+
+/* about section */
+
+.about {
+  padding: inherit 1.5%;
+}
+
+/* categories */
+.categories {
+  text-transform: uppercase;
+  width: 100%;
+  text-shadow: 3px 3px 6px #969696;
+}
+
+.product-categories {
+  /* flex-wrap: wrap
+        flex-direction: row 
+            option 1: continue to use break in list; organize based on line break; put display as flex, add @media all and (max-width: 600px) then flex-flow: row wrap
+            
+            option 2: treat as single row; @media all and (max-width: 3000px) then flex-flow: row wrap?
+            
+            is there a way to ensure the default is two lines?*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+.product-categories li {
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+  overflow: hidden;
+  border: 4px solid white;
+}
+
+.product-categories li a {
+  color: white;
+  text-decoration: none;
+}
+
+.product-categories li a:hover {
+  color: #f5ebc6;
+}
+.rectangle {
+  display: block;
+  padding: 10% 0;
+  flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  /* shorthand flex: 2 0 100% */
+  max-width: 50%;
+}
+
+.square {
+  display: block;
+  padding: 10% 5%;
+  flex: 1 0 50%;
+  max-width: 25%;
+}
+
+.mens {
+  background-image: url(../images/mens-category.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.trends {
+  background-image: url(../images/trends-category.jpg);
+  background-size: cover;
+  text-align: center;
+  /* position: relative; */
+}
+
+.category-name {
+  display: flex;
+  justify-content: center;
+  /* this fixed the trends and glasses alignment issue */
+}
+
+.glasses {
+  background-image: url(../images/glasses-category.jpg);
+  background-size: cover;
+}
+
+.sale {
+  background-image: url(../images/sale-category.jpg);
+  background-size: cover;
+}
+
+.bags {
+  background-image: url(../images/bags-category.jpg);
+  background-size: cover;
+}
+
+.womens {
+  background-image: url(../images/womens-category.jpg);
+  background-size: cover;
+}
+
+/* Most-Loved Products/flickity */
+
+.flickity {
+  display: flex;
+}
+
+.individual-item {
+  display: flex;
+  flex-direction: column;
+  color: #969696;
+}
+
+.product-type {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.product-name {
+  font-family: "Playfair Display";
+  font-size: 1.5rem;
+  color: #e2574c;
+  padding: 15px 0;
+}
+
+.price {
+  font-weight: 500;
+}
+
+/* updates */
+.email {
+  display: flex;
+  flex-direction: column;
+  /* padding: 4 rem 0; read section on padding*/
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0,
+      rgba(0, 0, 0, 0.15)
+    ),
+    url(../images/wave-bkgd.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 390px;
+  border-bottom: 9px solid white;
+  padding: 65px 25px 45px 15px;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 6px #969696;
+  /* font-size: 16px;
+  line-height: 2; */
+  /* set padding in em */
+  /* set min width at px  */
+}
+
+.email p {
+  padding: 5px 0;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+.email-subscribe {
+  padding: 25px 5px;
+  max-width: 650px;
+  min-width: 100px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.email-input {
+  position: center bottom;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 3px;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 370px;
+  font-size: 1rem;
+  /* margin: 0 auto; */
+}
+input[type="email"] {
+  border: 0;
+  padding-left: 25px;
+  font-size: 1rem;
+  font-weight: 100;
+  width: 67%;
+}
+
+/* input [type="email"]::selection {
+  text-decoration-line: none;}  */
+
+input[type="submit"] {
+  color: white;
+  background-color: #e2574c;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: crosshair;
+  margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #b64036;
+}
+
+/* footer/social media */
+
+footer {
+  background-color: #242424;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 60px 0px;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0.875rem;
+}
+
+.contact-info {
+  color: white;
+  text-align: left;
+  margin-left: 13px;
+  font-family: "Playfair Display";
+  line-height: 1.5;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: white;
+}
+
+.contact-info a:hover {
+  color: #e2574c;
+}
+
+.contact-info .phone-email {
+  line-height: 4;
+}
+
+.social-media {
+  margin-right: 50px;
+  line-height: 2;
+  font-weight: 200px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.social-media li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media li a:hover {
+  color: #e2574c;
+}
+.contact-info .address {
+  color: #969696;
+}
+
+/* Breakpoints */
+
+/* Hello instructors, I know my breakpoints are inconsistent, and that I'm supposed to use min-width: as per mobile first. It's now become too cumbersome to switch everything around, and setting 600px as max-width doesn't seem to affect funcationality as far as I can tell. */
+
+/* max-width: 600px */
+
+@media all and (max-width: 600px) {
+  h2 span {
+		font-size: 2rem;
+	}
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    order: 1;
+    flex-grow: 1;
+    /* border: 1px solid black; */
+  }
+
+  .navigation-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #969696;
+    margin-top: 10px;
+    min-height: 30px;
+    padding: 0;
+  }
+  .cart {
+    flex-basis: 40%;
+    text-align: right;
+    margin-right: 0;
+  }
+  .banner {
+    padding: 180px auto;
+  }
+  .square {
+    display: flex;
+    flex: 1 0 100%;
+    max-width: 50%;
+    padding: 20% 0;
+    font-size: 1.5em;
+  }
+  .rectangle {
+    display: flex;
+    flex: 2 0 100%;
+    max-width: none;
+    padding: 20% 0;
+    font-size: 1.5em;
+  }
+	
+  .email {
+    padding: 100px 25px 50px 25px;
+    /* background-size: stretch; */
+  }
+  .email p {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .email-subscribe {
+    /* max-height: 90px; */
+    display: flex;
+    margin: 25px auto 0 auto;
+    padding: 0;
+    /* flex-flow: row nowrap; */
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+
+  }
+  .contact-info p {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+
+  .social-media {
+    margin: 0 auto;
+  }
+  .social-media ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .social-media li {
+    margin: 30px 5px 0 5px;
+  }
+  .social-media span {
+    display: none;
+  }
+}
+
+/* min-width: 1240px */
+
+@media all and (min-width: 1240px) {
+	
+  .page-header {
+    font-size: 1rem;
+    /* flex-basis: 0%; */
+  }
+  .page-header img {
+    min-width: 160px;
+    min-height: 65px;
+  }
+  .logo {
+    display: flex;
+    /* flex-grow: 1; */
+    flex-basis: 9%;
+    position: relative;
+    text-align: left;
+  }
+
+  .cart {
+    /* flex-grow: 1; */
+    flex-basis: 9%;
+    text-align: right;
+    margin-right: 0;
+  }
+
+  nav li a {
+    margin: 0 20px;
+  }
+  .banner {
+    background-size: cover, 250px 615px, contain;
+    height: 550px;
+  }
+  .banner h1 h3 {
+    /* margin: 0 auto; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .banner h1 {
+    font-size: 4rem;
+  }
+  .product-categories li {
+    font-size: 2.5rem;
+  }
+}
