@@ -308,7 +308,6 @@ nav li a:hover {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto;
-  min-height: 390px;
   border-bottom: 9px solid white;
   padding: 65px 25px 45px 15px;
   text-align: center;
@@ -330,15 +329,15 @@ nav li a:hover {
 }
 
 .email-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 25px 5px;
-  max-width: 650px;
-  min-width: 100px;
   margin: 0 auto;
   font-size: 1rem;
 }
 
 .email-input {
-  position: center bottom;
   background-color: white;
   display: flex;
   flex-flow: row nowrap;
@@ -346,16 +345,26 @@ nav li a:hover {
   padding: 3px;
   border-radius: 30px;
   overflow: hidden;
-  max-width: 370px;
   font-size: 1rem;
   /* margin: 0 auto; */
 }
+
 input[type="email"] {
   border: 0;
   padding-left: 25px;
   font-size: 1rem;
   font-weight: 100;
+  width: 300px;
+ 
+}
+
+input [type="email-test"] {
+  border: 0;
+  padding-left: 25px;
+  font-size: 1rem;
+  font-weight: 100;
   width: 67%;
+  width: 100px;
 }
 
 /* input [type="email"]::selection {
@@ -490,8 +499,9 @@ footer {
   }
 	
   .email {
-    padding: 100px 25px 50px 25px;
-    /* background-size: stretch; */
+    padding: 50px 25px;
+    height: 340px;
+    /* max-height: 350px; */
   }
   .email p {
     font-size: 1rem;
@@ -504,6 +514,10 @@ footer {
     padding: 0;
     /* flex-flow: row nowrap; */
   }
+  input[type="email"] {
+    width: 67%;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
