@@ -37,7 +37,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2.45rem;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  /* padding-bottom: 0; */
 }
 
 h3 {
@@ -78,16 +80,17 @@ body {
 
 .page-header {
   display: flex;
-  align-items: center;
+  /* align-items: space-between; */
   justify-content: space-between;
   padding: 15px 2.16%;
   background-color: white;
   position: fixed;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
   font-size: 0.875em;
   font-weight: 500;
   top: 0;
+  /* border: 1px solid pink; */
   /* padding: 16px 1% 8 px 1%; */
 
   /* stretch goal -- position: sticky?; 
@@ -113,12 +116,20 @@ body {
   text-align: right;
   margin-right: 0;
 }
-
+.navigation {
+  order: 1;
+  border-top: 1px solid grey;
+  display: flex;
+  margin: 10px auto 0 auto;
+  justify-content: space-around;
+  padding: 9px 100px 0 100px;
+  /* flex-grow: 1; */
+  /* border: 1px solid black; */
+}
 .navigation-options {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* align-self: flex-end; */
   text-transform: uppercase;
   color: #e2574c;
   flex-grow: 1;
@@ -128,7 +139,7 @@ body {
 
 nav li a {
   color: #e2574c;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
 }
 
@@ -140,10 +151,11 @@ nav li a:hover {
 .banner {
   color: white;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  /* flex-flow: column wrap; */
   justify-content: center;
   height: 400px;
-  padding: 130px 0px;
+  padding: 180px 0px;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.25) 0,
@@ -154,12 +166,18 @@ nav li a:hover {
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: center, center 60px, top;
   background-size: cover, 150px 369px, cover;
-  margin-top: 83px;
+  margin-top: 118px;
 }
 
 .banner h3 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  padding-top: 50px;
+}
+
+.banner h1 {
+  font-size: 2.25rem;
 }
 
 .banner h3,
@@ -170,7 +188,7 @@ nav li a:hover {
 /* about section */
 
 .about {
-  padding: inherit 1.5%;
+  padding: 60px 1.5%;
 }
 
 /* categories */
@@ -195,7 +213,7 @@ nav li a:hover {
 }
 .product-categories li {
   justify-content: center;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
   overflow: hidden;
   border: 4px solid white;
@@ -211,19 +229,19 @@ nav li a:hover {
 }
 .rectangle {
   display: block;
-  padding: 10% 0;
+  padding: 22.5% 0;
   flex-grow: 2;
   flex-shrink: 0;
   flex-basis: 100%;
   /* shorthand flex: 2 0 100% */
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .square {
   display: block;
-  padding: 10% 5%;
+  padding: 22.5% 5%;
   flex: 1 0 50%;
-  max-width: 25%;
+  max-width: 50%;
 }
 
 .mens {
@@ -279,19 +297,20 @@ nav li a:hover {
 
 .product-type {
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 400;
 }
 
 .product-name {
   font-family: "Playfair Display";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #e2574c;
   padding: 15px 0;
 }
 
 .price {
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 400;
 }
 
 /* updates */
@@ -309,10 +328,12 @@ nav li a:hover {
   background-repeat: no-repeat;
   background-size: auto;
   border-bottom: 9px solid white;
-  padding: 65px 25px 45px 15px;
+  padding: 60px 25px 45px 15px;
   text-align: center;
   color: white;
   text-shadow: 3px 3px 6px #969696;
+  height: 340px;
+  font-size: 2rem;
   /* font-size: 16px;
   line-height: 2; */
   /* set padding in em */
@@ -320,12 +341,12 @@ nav li a:hover {
 }
 
 .email p {
-  padding: 5px 0;
+  /* padding: 5px 0; */
   max-width: 700px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .email-subscribe {
@@ -390,11 +411,11 @@ input[type="submit"]:hover {
 footer {
   background-color: #242424;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  padding: 60px 0px;
+  padding: 60px;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   font-size: 0.875rem;
 }
 
@@ -407,7 +428,8 @@ footer {
 }
 
 .contact-info p {
-  font-size: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -424,11 +446,20 @@ footer {
 }
 
 .social-media {
-  margin-right: 50px;
-  line-height: 2;
-  font-weight: 200px;
-  text-align: left;
-  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media li {
+  margin: 30px 5px 0 5px;
+}
+
+.social-media span {
+  display: none;
 }
 
 .social-media li a {
@@ -449,101 +480,151 @@ footer {
 
 /* max-width: 600px */
 
-@media all and (max-width: 600px) {
-  h2 span {
-		font-size: 2rem;
-	}
+@media all and (min-width: 600px) {
+  h2 {
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: 1.15rem;
+  }
   .page-header {
     display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
+    flex-wrap: nowrap;
+    padding: 15px 10px 0px 10px;    
+  }
+  .page-header img {
+    max-width: 125px;
+    max-height: 50px;
   }
   .navigation {
+    order: 0;
+    border-top: none;
     display: flex;
-    flex-flow: row wrap;
-    order: 1;
-    flex-grow: 1;
+    margin: 0 auto;
+    /* justify-content: space-around; */
+    padding: 22px 0;
+    /* flex-grow: 1; */
     /* border: 1px solid black; */
   }
-
-  .navigation-options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid #969696;
-    margin-top: 10px;
-    min-height: 30px;
-    padding: 0;
-  }
-  .cart {
-    flex-basis: 40%;
-    text-align: right;
-    margin-right: 0;
+  nav li a {
+    margin: 0 10px;
   }
   .banner {
-    padding: 180px auto;
+    margin-top: 82px;
+    padding-top: 145px;
+  }
+  .banner h3{
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+  .about {
+    padding-top: 70px;
+  }
+  .about h2 {
+    font-size:2.45rem;
+  }
+  .product-categories li {
+    justify-content: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    border: 4px solid white;
   }
   .square {
     display: flex;
-    flex: 1 0 100%;
-    max-width: 50%;
-    padding: 20% 0;
-    font-size: 1.5em;
+    flex: 1 0 50%;
+    max-width: 25%;
+    padding: 10% 0;
   }
   .rectangle {
     display: flex;
-    flex: 2 0 100%;
-    max-width: none;
-    padding: 20% 0;
+    flex: 2 0 50%;
+    max-width: 50%;
+    padding: 10% 0;
     font-size: 1.5em;
   }
-	
+
   .email {
-    padding: 50px 25px;
-    height: 340px;
-    /* max-height: 350px; */
+    height: 385px;
+    padding-top: 65px;
   }
+
   .email p {
-    font-size: 1rem;
-    padding: 0;
-  }
-  .email-subscribe {
-    /* max-height: 90px; */
-    display: flex;
-    margin: 25px auto 0 auto;
-    padding: 0;
-    /* flex-flow: row nowrap; */
-  }
-  input[type="email"] {
-    width: 67%;
+    font-size: 1.15rem;
   }
 
   footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 45px;
-
-  }
-  .contact-info p {
-    text-align: center;
-    font-size: 0.875rem;
-  }
-
-  .social-media {
-    margin: 0 auto;
-  }
-  .social-media ul {
+    background-color: #242424;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    padding: 45px 0px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 0.875rem;
   }
-  .social-media li {
-    margin: 30px 5px 0 5px;
+  
+  .contact-info {
+    color: white;
+    text-align: left;
+    margin-left: 13px;
+    font-family: "Playfair Display";
+    line-height: 1.5;
   }
+  
+  .contact-info p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: left;
+    padding: 0 auto;
+  }
+  
+  .contact-info a {
+    color: white;
+  }
+  
+  .contact-info a:hover {
+    color: #e2574c;
+  }
+  
+  .contact-info .phone-email {
+    line-height: 3.75;
+  }
+  
+  .social-media {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 40px;
+    text-align: left;
+    font-size: 1rem;
+    border: 1px solid white;
+    /* why's line spacing so big?? */
+  }
+
   .social-media span {
-    display: none;
+    display: flex;
+    margin-left: 10px;
+    line-height: 1rem;
+    text-justify: left;
+    /* align-text left?? */
   }
-}
+  
+  .social-media ul {
+    display: flex;
+    flex-flow: column nowrap;
+    }
+  
+  .social-media li a {
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+    text-decoration: none;
+    }
+}  
 
 /* min-width: 1240px */
 
@@ -590,5 +671,24 @@ footer {
   }
   .product-categories li {
     font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .product-type {
+    font-size: 0.75rem;
+  }
+  
+  .product-name {
+    font-size: 1.5rem;
+    color: #e2574c;
+    padding-bottom: 20px;
+  }
+  
+  .price {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .email {
+    height: 350px;
+    padding-top: 65px;
   }
 }
