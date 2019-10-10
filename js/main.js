@@ -5,14 +5,14 @@ const cartItems = document.getElementsByClassName("purchase")[0];
 const cart = document.getElementsByClassName("add-cart")[0];
 const purchaseBubble = document.getElementById("purchase-bubble");
 let clicks = 0;
-purchaseBubble.style.visibility = 'hidden';
+cartItems.style.visibility = 'hidden';
 
 cart.addEventListener("click", function cart() {
       clicks ++;
     cartItems.innerHTML = clicks;
     console.log(clicks);
     if (clicks > 0) {
-        purchaseBubble.style.visibility = 'visible';
+        cartItems.style.visibility = 'visible';
         }
 });
 
