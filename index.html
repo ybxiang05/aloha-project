@@ -7,6 +7,8 @@
     <meta name="author" content="poop" />
     <link 
       href="./css/reset.css"  rel="stylesheet" />
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" 
       integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" 
@@ -111,56 +113,57 @@
         ><span class="heading-bold"> Products</span>
       </h2>
       <section>
-        <ul class="flickity">
-          <li class="individual-item">
-            <img src="./images/stretch-knit-dress.jpg"/>
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <img class="product-image" src="./images/stretch-knit-dress.jpg"/>
             <span class="product-type">dresses</span>
             <span class="product-name">Stretch Knit Dress</span>
             <span class="price">$169.00</span>
-          </li>
-          <li class="individual-item">
-            <img src="./images/cotton-blue-shirt.jpg"/>
+          </div>
+          <div class="carousel-cell">
+            <img class="product-image" src="./images/cotton-blue-shirt.jpg"/>
             <span class="product-type">shirts</span>
             <span class="product-name">Denim Shirt</span>
             <span class="price">$89.00</span>
-          </li>
-          <li class="individual-item">
-            <img src="./images/checked-stretch-dress.jpg"/>
+          </div>
+          <div class="carousel-cell">
+            <img class="product-image" src="./images/checked-stretch-dress.jpg"/>
             <span class="product-type">dresses</span>
             <span class="product-name">Checked Stretch Dress</span>
             <span class="price">$129.00</span>
-          </li>
-          <li class="individual-item">
-            <img src="./images/blue-hipster-backpack.jpg"/>
+          </div>
+          <div class="carousel-cell">
+            <img class="product-image" src="./images/blue-hipster-backpack.jpg"/>
             <span class="product-type">bags</span>
             <span class="product-name">Blue Hipster Backpack</span>
             <span class="price">$69.00</span>
-          </li>
-          <li class="individual-item">
-            <img src="./images/demin-overall-shorts.jpg"/>
+          </div>
+          <div class="carousel-cell">
+            <img class="product-image" src="./images/demin-overall-shorts.jpg"/>
             <span class="product-type">denim</span>
             <span class="product-name">Denim Overall Shorts</span>
             <span class="price">$89.00</span>
-          </li>
-          <li class="individual-item">
-            <img src="./images/pink-dotted-dress.jpg"/>
+          </div>
+          <div class="carousel-cell">
+            <img class="product-image" src="./images/pink-dotted-dress.jpg"/>
             <span class="product-type">dresses</span>
             <span class="product-name">Dotted Dress</span>
             <span class="price">$99.00</span>
-          </li>
-          <li class="individual-item">
-            <img src="./images/blue-silk-dress.jpg"/>
+          </div>
+          <div class="carousel-cell">
+            <img class="product-image" src="./images/blue-silk-dress.jpg"/>
             <span class="product-type">dresses</span>
             <span class="product-name">Blue Silk Dress</span>
             <span class="price">$119.00</span>
-          </li>
-          <li class="individual-item">
-            <img src="./images/cotton-yellow-tshirt.jpg"/>
+          </div>
+          <div class="carousel-cell">
+            <img class="product-image" src="./images/cotton-yellow-tshirt.jpg"/>
             <span class="product-type">shirts</span>
             <span class="product-name">Cotton Yellow Tshirt</span>
             <span class="price">$39.00</span>
-          </li>
-        </ul>
+          </div>
+          
+        </div>
       </section>
     </section>
 
@@ -178,6 +181,7 @@
       <div class="email-subscribe">
         <form class="email-input">
           <input
+              id="user-email"
               type="email"
               name="email_address"
               value placeholder="Your Email"/>
@@ -233,6 +237,8 @@
         </ul>
       </aside>
     </footer>
+    <!-- Flickity JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
