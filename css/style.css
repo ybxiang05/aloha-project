@@ -147,6 +147,21 @@ nav li a:hover {
   color: #b64036;
 }
 
+.purchase {
+  height: 20px;
+  width: 20px;
+  background:  #e2574c;
+  position: fixed;
+  top: 13px;
+  right: 3px;
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* banner */
 .banner {
   color: white;
@@ -455,7 +470,7 @@ footer {
 }
 
 .social-media li {
-  margin: 30px 5px 0 5px;
+  margin: 8px;
 }
 
 .social-media span {
@@ -561,7 +576,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 45px 0px;
+    padding: 65px 0px;
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -601,7 +616,7 @@ footer {
     margin-right: 40px;
     text-align: left;
     font-size: 1rem;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* why's line spacing so big?? */
   }
 
@@ -631,7 +646,7 @@ footer {
 @media all and (min-width: 1240px) {
 	
   .page-header {
-    font-size: 1rem;
+    font-size: 1rem;    
     /* flex-basis: 0%; */
   }
   .page-header img {

@@ -39,12 +39,18 @@
       </nav>
       <div class="cart">
         <a href="#">
-          <img
+          <img 
+            class="add-cart"
             src="images/cart-icon.svg"
             alt="Shopping Cart"
           />
         </a>
+        <div id="purchase-bubble">
+          <div class="purchase" ></div>
+        </div>
+        
       </div>
+      
     </header>
 
     <!-- main image/visuals -->
@@ -69,22 +75,34 @@
     <section class="categories" id="shop">
       <ul class="product-categories">
         <li class="rectangle mens">
-          <span class="category-name"></span><a href="#">Men's</a></span>
+          <span class="category-name"></span>
+            <a href="#">Men's</a>
+          </span>
         </li>
         <li class="square trends">
-          <span class="category-name"><a href="#">Trends</a></span>
+          <span class="category-name">
+            <a href="#">Trends</a>
+          </span>
         </li>
         <li class="square glasses">
-            <span class="category-name"><a href="#">Glasses</a></span>
+            <span class="category-name">
+              <a href="#">Glasses</a>
+            </span>
         </li>
         <li class="square sale">
-            <span class="category-name"><a href="#">Sale</a></span>
+            <span class="category-name">
+              <a href="#">Sale</a>
+            </span>
         </li>
         <li class="square bags">
-            <span class="category-name"><a href="#">Bags</a></span>
+            <span class="category-name">
+              <a href="#">Bags</a>
+            </span>
         </li>
         <li class="rectangle womens">
-            <span class="category-name"><a href="#">Women's</a></span>
+            <span class="category-name">
+              <a href="#">Women's</a>
+            </span>
         </li>
       </ul>
     </section>
@@ -160,18 +178,19 @@
         upcoming sales, and get free style tips from our blog. Unsubscribe at
         any time.
       </p>
-    <div class="email-subscribe">
-      <form class="email-input">
-        <input
-            type="email"
-            name="email_address"
-            value placeholder="Your Email"/>
-        <input 
-            type="submit" 
-            name="Subscribe" 
-            value="Subscribe"/>
-      </form>
-    </div>
+      <div class="email-subscribe">
+        <form class="email-input">
+          <input
+              type="email"
+              name="email_address"
+              value placeholder="Your Email"/>
+          <input 
+              type="submit" 
+              name="Subscribe" 
+              value="Subscribe"
+              id="submitted"/>
+        </form>
+      </div>
     </section>
 
     <footer class="container">
@@ -194,7 +213,7 @@
       <aside class="social-media">
         <ul>
           <li class="facebook">
-            <a href="#">
+            <a class="test" href="#">
               <i class="fab fa-facebook-f"></i> <span>Facebook</span>
             </a>
           </li>
@@ -217,5 +236,6 @@
         </ul>
       </aside>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
