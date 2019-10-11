@@ -349,6 +349,16 @@ nav li a:hover {
   color: #969696;
 }
 
+.add-to-cart {
+  /* border: 1px solid pink; */
+  color: white;
+  background-color: black;
+  max-width: 80px;
+  border-radius: 30px;
+  margin: 20px auto;
+}
+  
+
 /* updates */
 .email {
   display: flex;
