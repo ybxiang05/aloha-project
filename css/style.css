@@ -504,11 +504,17 @@ footer {
 
 /* Breakpoints */
 
-/* Hello instructors, I know my breakpoints are inconsistent, and that I'm supposed to use min-width: as per mobile first. It's now become too cumbersome to switch everything around, and setting 600px as max-width doesn't seem to affect funcationality as far as I can tell. */
 
-/* max-width: 600px */
+/* min-width: 600px */
 
 @media all and (min-width: 600px) {
+
+/* general formatting and stylistics */
+
+  .container-small {
+    max-width: none;
+  }
+
   h2 {
     font-size: 2.4rem;
     padding-bottom: 10px;
@@ -516,6 +522,8 @@ footer {
   p {
     font-size: 1.15rem;
   }
+
+/* header */
   .page-header {
     display: flex;
     flex-wrap: nowrap;
@@ -538,6 +546,9 @@ footer {
   nav li a {
     margin: 0 10px;
   }
+
+  /* banner */
+
   .banner {
     margin-top: 82px;
     padding-top: 145px;
@@ -549,12 +560,18 @@ footer {
   .banner h1 {
     font-size: 3rem;
   }
+
+/* about */
+
   .about {
     padding-top: 70px;
   }
   .about h2 {
     font-size:2.45rem;
   }
+
+/* product categories */
+
   .product-categories li {
     justify-content: center;
     font-size: 1.75rem;
@@ -575,6 +592,8 @@ footer {
     font-size: 1.5em;
   }
 
+/* flickity/most loved */
+
   .most-loved h2 {
     padding-bottom:50px;
   }
@@ -589,6 +608,8 @@ footer {
     margin: 0 auto;
   } 
 
+/* email subscribe */
+
   .email {
     height: 385px;
     padding-top: 65px;
@@ -597,6 +618,8 @@ footer {
   .email p {
     font-size: 1.15rem;
   }
+
+  /* footer/contact info/social media */
 
   footer {
     background-color: #242424;
