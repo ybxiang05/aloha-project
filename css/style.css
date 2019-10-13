@@ -15,7 +15,7 @@ html {
 /* typography */
 
 body {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 16px;
 }
@@ -30,7 +30,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", 'Times New Roman', Times, serif;
   margin-bottom: 1.5rem;
 }
 
@@ -111,7 +111,7 @@ body {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  border-top: 1px solid #bbb9b9;
+  border-top: 1px solid #d7d7d7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,6 +588,10 @@ footer {
 @media all and (min-width: 600px) {
   /* general formatting and stylistics */
 
+  .html {
+    font-size: 16px;
+  }
+
   .container-small {
     max-width: none;
   }
@@ -897,14 +901,23 @@ footer {
     padding-top: 40px;
   }
   .banner h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     padding-top: 10px;
   }
 
   /* product categories */
 
+  .rectangle {
+    padding: 11% 0;
+  }
+  
+  .square {
+    padding: 11% 5%;
+  }
+  
+
   .product-categories li {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 500;
   }
   .product-type {

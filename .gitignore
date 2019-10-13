@@ -9,3 +9,6 @@ ehthumbs.db
 *.Trashes
 # Ignore npm packages
 node_modules/
+
+#Ignore folder for instructions
+aloha-project-instructions/
