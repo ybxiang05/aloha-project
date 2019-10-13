@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth; 
+  font-size: 14px;
 }
 
 *,
@@ -33,12 +34,8 @@ h1, h2 {
   margin-bottom: 1.5rem;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
 h2 {
-  font-size: 2rem;
+  font-size: 2.45rem;
   line-height: 1.8rem;
   /* padding-bottom: 0; */
 }
@@ -50,7 +47,7 @@ h3 {
 
 p {
   line-height: 2;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 footer p {
@@ -83,14 +80,13 @@ body {
   display: flex;
   /* align-items: space-between; */
   justify-content: space-between;
-  padding: 15px 2.16%;
+  padding: 15px 2.16% 10px 2.16%;
   background-color: white;
   position: fixed;
   z-index: 1;
   flex-wrap: wrap;
   width: 100%;
   font-size: 0.875em;
-  font-weight: 500;
   top: 0;
   /* border: 1px solid pink; */
   /* padding: 16px 1% 8 px 1%; */
@@ -120,12 +116,11 @@ body {
 }
 .navigation {
   order: 1;
-  border-top: 1px solid grey;
+  border-top: 1px solid #bbb9b9;
   display: flex;
   margin: 10px auto 0 auto;
   justify-content: space-around;
-  padding: 9px 35px 0 35px;
-  /* flex-grow: 1; */
+  padding: 13px 15% 0 15%;
   /* border: 1px solid pink; */
 }
 .navigation-options {
@@ -134,7 +129,7 @@ body {
   flex-wrap: nowrap;
   text-transform: uppercase;
   color: #e2574c;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   /* position: relative; */
   /* why is alignment skewed right? */
 }
@@ -143,6 +138,7 @@ nav li a {
   color: #e2574c;
   margin: 0 15px;
   text-decoration: none;
+  font-weight: 400;
 }
 
 nav li a:hover {
@@ -187,14 +183,14 @@ nav li a:hover {
 }
 
 .banner h3 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   margin-top: 0px;
   padding-top: 15px;
 }
 
 .banner h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
 }
 
 .banner h3,
@@ -204,8 +200,9 @@ nav li a:hover {
 
 /* about section */
 
-.about {
-  padding: 60px 1.5%;
+ #about {
+  font-size: 1rem;
+  padding-bottom: 60px;
 }
 
 /* categories */
@@ -230,7 +227,7 @@ nav li a:hover {
 }
 .product-categories li {
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-weight: 500;
   overflow: hidden;
   border: 4px solid white;
@@ -313,7 +310,7 @@ nav li a:hover {
   width: 100%;
   text-align: center;
   /* margin-top: 25px; */
-  padding-bottom: 50px;
+  /* padding-bottom: 10px; */
 } 
 
 .product-image {
@@ -326,36 +323,39 @@ nav li a:hover {
 .carousel-text {
   display: flex;
   flex-flow: column nowrap;
-  margin-bottom: 25px;
 }
 
 .product-type {
   text-transform: uppercase;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: #969696
 }
 
 .product-name {
   font-family: "Playfair Display";
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #e2574c;
   padding: 15px 0;
 }
 
 .price {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #969696;
+  padding-top: 5px;
 }
 
 .add-to-cart {
   /* border: 1px solid pink; */
   color: white;
   background-color: black;
-  max-width: 80px;
   border-radius: 30px;
   margin: 20px auto;
+  padding: 3px 10px;
+  font-size: 0.75em;
+  font-weight: 400;
+  cursor: pointer;
 }
   
 
@@ -374,12 +374,12 @@ nav li a:hover {
   background-repeat: no-repeat;
   background-size: auto;
   border-bottom: 9px solid white;
-  padding: 60px 25px 45px 15px;
+  padding: 60px 15px 45px 15px;
   text-align: center;
   color: white;
   text-shadow: 3px 3px 6px #969696;
   height: 340px;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   /* font-size: 16px;
   line-height: 2; */
   /* set padding in em */
@@ -388,11 +388,10 @@ nav li a:hover {
 
 .email p {
   /* padding: 5px 0; */
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
 }
 
 .email-subscribe {
@@ -401,7 +400,6 @@ nav li a:hover {
   align-items: center;
   padding: 25px 5px;
   margin: 0 auto;
-  font-size: 1rem;
 }
 
 .email-input {
@@ -410,42 +408,33 @@ nav li a:hover {
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 3px;
-  border-radius: 30px;
-  overflow: hidden;
-  font-size: 1rem;
-  /* margin: 0 auto; */
+  border-radius: 80px;
 }
 
 input[type="email"] {
+  font-family: "Raleway";
   border: 0;
   padding-left: 25px;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 200;
+  border-radius: 80px;
   width: 300px;
- 
 }
-
-input [type="email-test"] {
-  border: 0;
-  padding-left: 25px;
-  font-size: 1rem;
-  font-weight: 100;
-  width: 67%;
-  width: 100px;
+/* how does this work if I want to get rid of the grey outline when I click on the email input box? */
+input[type="email"]:active {
+  border: none;
 }
-
-/* input [type="email"]::selection {
-  text-decoration-line: none;}  */
 
 input[type="submit"] {
+  font-family: "Raleway";
   color: white;
   background-color: #e2574c;
   border-radius: 30px;
   border: none;
-  padding: 10px 15px;
-  font-size: 1rem;
-  cursor: crosshair;
+  padding: 10px 25px;
+  cursor: pointer;
   margin: 0 auto;
+  font-size: 1rem;
 }
 
 input[type="submit"]:hover {
@@ -459,23 +448,22 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 60px;
+  padding-top: 60px;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.875rem;
 }
 
 .contact-info {
   color: white;
   text-align: left;
-  margin-left: 13px;
+  /* margin-left: 13px; */
   font-family: "Playfair Display";
   line-height: 1.5;
 }
 
 .contact-info p {
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -488,11 +476,11 @@ footer {
 }
 
 .contact-info .phone-email {
-  line-height: 4;
+  line-height: 3.5;
 }
 
 .social-media {
-  margin: 0 auto;
+  margin: 20px auto 50px auto;
 }
 
 .social-media ul {
@@ -508,6 +496,9 @@ footer {
   display: none;
 }
 
+.social-media i {
+  font-size: 0.9rem;
+}
 .social-media li a {
   color: white;
   text-decoration: none;
@@ -533,12 +524,21 @@ footer {
     max-width: none;
   }
 
+  .banner h3{
+    font-size: 1.5rem;
+    padding-top: 45px;
+  }
+  .banner h1 {
+    font-size: 3em;
+    padding-top: 5px;
+  }
+
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.75rem;
     padding-bottom: 10px;
   }
   p {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 
 /* header */
@@ -571,29 +571,23 @@ footer {
     margin-top: 82px;
     padding-top: 145px;
   }
-  .banner h3{
-    font-size: 1.25rem;
-    margin-top: 0;
-  }
-  .banner h1 {
-    font-size: 3rem;
-  }
+ 
 
 /* about */
 
   .about {
     padding-top: 70px;
   }
-  .about h2 {
+  /* .about h2 {
     font-size:2.45rem;
-  }
+  } */
 
 /* product categories */
 
   .product-categories li {
     justify-content: center;
-    font-size: 1.75rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 500;
     border: 4px solid white;
   }
   .square {
@@ -613,7 +607,7 @@ footer {
 /* flickity/most loved */
 
   .most-loved h2 {
-    padding-bottom:50px;
+    padding-bottom:40px;
   }
 
   .carousel-cell {
@@ -623,18 +617,18 @@ footer {
   .product-image {
     display: flex;
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
   } 
 
   .product-type {
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 400;
   }
   
   .product-name {
     font-family: "Playfair Display";
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #e2574c;
     padding: 15px 0;
   }
@@ -643,6 +637,10 @@ footer {
     font-size: 1rem;
     font-weight: 400;
   }
+  .add-to-cart {
+    font-size: 1em;
+    margin: 30px auto;
+  }
 
 /* email subscribe */
 
@@ -650,10 +648,20 @@ footer {
     height: 385px;
     padding-top: 65px;
   }
-
-  .email p {
-    font-size: 1.15rem;
+  .email-input {
+    margin-top: 10px;
   }
+  input[type="email"] {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  input[type="submit"] {
+    font-size: 1.15rem;
+    font-weight: 400;
+  }
+  
+
 
   /* footer/contact info/social media */
 
@@ -662,26 +670,23 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 65px 0px;
+    padding: 45px 0px;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    font-size: 0.875rem;
   }
   
   .contact-info {
     color: white;
-    text-align: left;
     margin-left: 13px;
     font-family: "Playfair Display";
     line-height: 1.5;
   }
   
   .contact-info p {
-    font-size: 1rem;
-    line-height: 1.4;
     text-align: left;
     padding: 0 auto;
+    font-size:1.15rem;
   }
   
   .contact-info a {
@@ -693,7 +698,7 @@ footer {
   }
   
   .contact-info .phone-email {
-    line-height: 3.75;
+    line-height: 3.5;
   }
   
   .social-media {
@@ -701,16 +706,17 @@ footer {
     flex-flow: column nowrap;
     margin-right: 40px;
     text-align: left;
+  }
+
+  .social-media i {
     font-size: 1rem;
-    /* border: 1px solid white; */
-    /* why's line spacing so big?? */
   }
 
   .social-media span {
     display: flex;
-    margin-left: 10px;
-    line-height: 1rem;
-    text-justify: left;
+    margin-left: 15px;
+    /* line-height: 1rem; */
+    text-align: left;
     /* align-text left?? */
   }
   
@@ -736,8 +742,8 @@ footer {
   }
 	
   .page-header {
-    font-size: 1rem;    
-    /* flex-basis: 0%; */
+    font-size: 1.15rem; 
+    padding-bottom: 13px;   
   }
   .page-header img {
     min-width: 160px;
@@ -756,34 +762,49 @@ footer {
     flex-basis: 9%;
     text-align: right;
     margin-right: 0;
+    overflow:hidden;
+  }
+
+  nav li {
+    margin-top: 9px;
   }
 
   nav li a {
-    margin: 0 20px;
+    margin: auto 20px;
   }
   .banner {
     background-size: cover, 250px 615px, contain;
     height: 550px;
   }
-  .banner h1 h3 {
+  /* .banner h1 h3 {
     /* margin: 0 auto; */
-    display: flex;
+    /* display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: center; */
+  
+
+  .banner h3 {
+    padding-top: 40px;
   }
   .banner h1 {
     font-size: 4rem;
+    padding-top: 10px;
+  }
+
+  p {
+    max-width: 675px;
+    margin: 0 auto;
   }
   .product-categories li {
     font-size: 2.5rem;
     font-weight: 500;
   }
   .product-type {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   
   .product-name {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #e2574c;
     padding-bottom: 20px;
   }
@@ -795,11 +816,14 @@ footer {
   }
   
   .price {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 500;
   }
   .email {
     height: 350px;
     padding-top: 65px;
+  }
+  .social-media {
+    margin-right: 90px;
   }
 }
