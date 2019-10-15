@@ -478,8 +478,8 @@ input[type="email"] {
   width: 300px;
 }
 /* how does this work if I want to get rid of the grey outline when I click on the email input box? */
-input[type="email"]:active {
-  border: none;
+input[type="email"]:focus {
+  outline: none;
 }
 
 input[type="submit"] {
