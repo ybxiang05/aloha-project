@@ -497,7 +497,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #b64036;
 }
-
+input[type="submit"]:focus {
+  outline: none;
+}
 /* footer/social media */
 
 footer {
