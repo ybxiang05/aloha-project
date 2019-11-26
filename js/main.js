@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
   // flickity carousel
 
   const elem = document.getElementsByClassName("main-carousel")[0];
@@ -18,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-    if (userEmail.value == "") {
+    if (userEmail.value === "") {
       alert("Please input a valid email address.");
-    } 
-    else {
+    } else {
       alert("Thank you for subscribing!");
     }
   });
